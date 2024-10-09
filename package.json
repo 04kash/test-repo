@@ -1,0 +1,15 @@
+{
+  "name": "test-changeset-script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/04kash/test-repo.git",
+  "author": "Kashish Mittal <kmittal@redhat.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.27.9"
+  }
+}
