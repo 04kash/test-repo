@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "cheerio": "1.0.0",
-    "aws-sdk": "1.0.0"
+    "aws-sdk": "1.0.0",
+    "msw": "1.0.0"
   }
 }
