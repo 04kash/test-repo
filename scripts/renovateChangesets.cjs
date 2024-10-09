@@ -177,13 +177,15 @@ function getBumps(files) {
                         console.log(match);
                         if (match) {
                             deps = match[0].replace(/"/g, '');
-                            depsVersion = match[1].replace(/"/g, '');
+                            depsVersion = match[1]?.replace(/"/g, '');
                             // Only add to bumps if it's not a devDependency
                             if (!devDependencies[deps]) {
                                 bumps.set(deps, depsVersion);
                             }
                         }
                     }
+                    console.log(bumps);
+                    console.log(devDependencies);
                     _c.label = 3;
                 case 3:
                     _i++;

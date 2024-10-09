@@ -117,7 +117,6 @@ async function main() {
     Array.from(changedPackageJsons.entries()).map(
       async ([workspace, packages]) => {
         const changes = await getBumps(packages.map(p => p.localPath));
-
         return {
           workspace,
           packages,
@@ -126,6 +125,10 @@ async function main() {
       },
     ),
   );
+
+  // remove entries where changes is empty
+
+  
 
   const changesetFilename = await getChangesetFilename();
   const changesetFiles: string[] = [];

@@ -184,7 +184,9 @@ function main() {
                             });
                         }))];
                 case 4:
+                  
                     bumps = _a.sent();
+                    bumps = bumps.filter(({ changes }) => changes.size > 0);
                     return [4 /*yield*/, (0, renovateChangesets_1.getChangesetFilename)()];
                 case 5:
                     changesetFilename = _a.sent();
