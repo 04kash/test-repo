@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: web@example.com
+  name: example-group
   description: Example group
 spec:
   type: team
