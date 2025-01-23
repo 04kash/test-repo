@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-service
+  namespace: default
+spec:
+  type: service
+  lifecycle: production
+  owner: team-xyz
+  relations:
+    - type: dependsOn
+      target:
+        kind: Component
+        namespace: default
+        name: my-deployment
