@@ -8,14 +8,111 @@ body:
       value: |
         We value your time and efforts to submit this Feature request form. 🙏
   - type: dropdown
-    id: workspace-name
+    id: workspace
     attributes:
-      label: Workspace Name
-      description: Specify the name of the Workspace to which this plugin belongs
+      label: Workspace
       options:
-        - Workspace A
-        - Workspace B
-        - Workspace C
+        - 3scale
+        - acr
+        - adr
+        - airbrake
+        - allure
+        - amplication
+        - analytics
+        - announcements
+        - apache-airflow
+        - apollo-explorer
+        - azure-devops
+        - azure-resources
+        - azure-sites
+        - azure-storage-explorer
+        - badges
+        - bazaar
+        - bitrise
+        - blackduck
+        - cicd-statistics
+        - cloudbuild
+        - code-climate
+        - code-coverage
+        - codescene
+        - confluence
+        - copilot
+        - cost-insights
+        - dynatrace
+        - entity-feedback
+        - entity-validation
+        - explore
+        - feedback
+        - firehydrant
+        - fossa
+        - gcalendar
+        - gcp-projects
+        - git-release-manager
+        - github-actions
+        - github-deployments
+        - github-discussions
+        - github-issues
+        - github-pull-requests-board
+        - gitops-profiles
+        - gocd
+        - grafana
+        - graphiql
+        - graphql-voyager
+        - ilert
+        - jaeger
+        - jenkins
+        - jfrog-artifactory
+        - kafka
+        - keycloak
+        - kiali
+        - lighthouse
+        - linguist
+        - linkerd
+        - manage
+        - matomo
+        - mend
+        - microsoft-calendar
+        - mta
+        - newrelic
+        - nexus-repository-manager
+        - nomad
+        - npm
+        - ocm
+        - octopus-deploy
+        - odo
+        - opencost
+        - periskop
+        - pingidentity
+        - playlist
+        - puppetdb
+        - quay
+        - rbac
+        - redhat-argocd
+        - redhat-resource-optimization
+        - report-portal
+        - rollbar
+        - scaffolder-backend-module-annotator
+        - scaffolder-backend-module-kubernetes
+        - scaffolder-backend-module-regex
+        - scaffolder-backend-module-servicenow
+        - scaffolder-backend-module-sonarqube
+        - scaffolder-relation-processor
+        - sentry
+        - shortcuts
+        - sonarqube
+        - splunk
+        - stack-overflow
+        - stackstorm
+        - tech-insights
+        - tech-radar
+        - tekton
+        - todo
+        - topology
+        - vault
+        - xcmetrics
+      default: 0
+    validations:
+      required: true
   - type: input
     id: plugin-name
     attributes:
