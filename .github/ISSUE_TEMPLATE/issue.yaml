@@ -12,6 +12,7 @@ body:
     attributes:
       label: Workspace
       options:
+        - ''
         - "3scale"
         - "acr"
         - "adr"
@@ -26,7 +27,6 @@ body:
         - "azure-resources"
         - "azure-sites"
         - "azure-storage-explorer"
-      default: ""
     validations:
       required: true
 
