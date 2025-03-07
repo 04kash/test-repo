@@ -12,6 +12,7 @@ body:
     attributes:
       label: Workspace
       options:
+        - ''
         - 3scale
         - acr
         - adr
