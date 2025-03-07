@@ -12,107 +12,208 @@ body:
     attributes:
       label: Workspace
       options:
-        - ''
-        - 3scale
-        - acr
-        - adr
-        - airbrake
-        - allure
-        - amplication
-        - analytics
-        - announcements
-        - apache-airflow
-        - apollo-explorer
-        - azure-devops
-        - azure-resources
-        - azure-sites
-        - azure-storage-explorer
-        - badges
-        - bazaar
-        - bitrise
-        - blackduck
-        - cicd-statistics
-        - cloudbuild
-        - code-climate
-        - code-coverage
-        - codescene
-        - confluence
-        - copilot
-        - cost-insights
-        - dynatrace
-        - entity-feedback
-        - entity-validation
-        - explore
-        - feedback
-        - firehydrant
-        - fossa
-        - gcalendar
-        - gcp-projects
-        - git-release-manager
-        - github-actions
-        - github-deployments
-        - github-discussions
-        - github-issues
-        - github-pull-requests-board
-        - gitops-profiles
-        - gocd
-        - grafana
-        - graphiql
-        - graphql-voyager
-        - ilert
-        - jaeger
-        - jenkins
-        - jfrog-artifactory
-        - kafka
-        - keycloak
-        - kiali
-        - lighthouse
-        - linguist
-        - linkerd
-        - manage
-        - matomo
-        - mend
-        - microsoft-calendar
-        - mta
-        - newrelic
-        - nexus-repository-manager
-        - nomad
-        - npm
-        - ocm
-        - octopus-deploy
-        - odo
-        - opencost
-        - periskop
-        - pingidentity
-        - playlist
-        - puppetdb
-        - quay
-        - rbac
-        - redhat-argocd
-        - redhat-resource-optimization
-        - report-portal
-        - rollbar
-        - scaffolder-backend-module-annotator
-        - scaffolder-backend-module-kubernetes
-        - scaffolder-backend-module-regex
-        - scaffolder-backend-module-servicenow
-        - scaffolder-backend-module-sonarqube
-        - scaffolder-relation-processor
-        - sentry
-        - shortcuts
-        - sonarqube
-        - splunk
-        - stack-overflow
-        - stackstorm
-        - tech-insights
-        - tech-radar
-        - tekton
-        - todo
-        - topology
-        - vault
-        - xcmetrics
+        - value: ""  # Empty value (invalid selection)
+          label: "Select a workspace..."
+        - value: "3scale"
+          label: "3scale"
+        - value: "acr"
+          label: "acr"
+        - value: "adr"
+          label: "adr"
+        - value: "airbrake"
+          label: "airbrake"
+        - value: "allure"
+          label: "allure"
+        - value: "amplication"
+          label: "amplication"
+        - value: "analytics"
+          label: "analytics"
+        - value: "announcements"
+          label: "announcements"
+        - value: "apache-airflow"
+          label: "apache-airflow"
+        - value: "apollo-explorer"
+          label: "apollo-explorer"
+        - value: "azure-devops"
+          label: "azure-devops"
+        - value: "azure-resources"
+          label: "azure-resources"
+        - value: "azure-sites"
+          label: "azure-sites"
+        - value: "azure-storage-explorer"
+          label: "azure-storage-explorer"
+        - value: "badges"
+          label: "badges"
+        - value: "bazaar"
+          label: "bazaar"
+        - value: "bitrise"
+          label: "bitrise"
+        - value: "blackduck"
+          label: "blackduck"
+        - value: "cicd-statistics"
+          label: "cicd-statistics"
+        - value: "cloudbuild"
+          label: "cloudbuild"
+        - value: "code-climate"
+          label: "code-climate"
+        - value: "code-coverage"
+          label: "code-coverage"
+        - value: "codescene"
+          label: "codescene"
+        - value: "confluence"
+          label: "confluence"
+        - value: "copilot"
+          label: "copilot"
+        - value: "cost-insights"
+          label: "cost-insights"
+        - value: "dynatrace"
+          label: "dynatrace"
+        - value: "entity-feedback"
+          label: "entity-feedback"
+        - value: "entity-validation"
+          label: "entity-validation"
+        - value: "explore"
+          label: "explore"
+        - value: "feedback"
+          label: "feedback"
+        - value: "firehydrant"
+          label: "firehydrant"
+        - value: "fossa"
+          label: "fossa"
+        - value: "gcalendar"
+          label: "gcalendar"
+        - value: "gcp-projects"
+          label: "gcp-projects"
+        - value: "git-release-manager"
+          label: "git-release-manager"
+        - value: "github-actions"
+          label: "github-actions"
+        - value: "github-deployments"
+          label: "github-deployments"
+        - value: "github-discussions"
+          label: "github-discussions"
+        - value: "github-issues"
+          label: "github-issues"
+        - value: "github-pull-requests-board"
+          label: "github-pull-requests-board"
+        - value: "gitops-profiles"
+          label: "gitops-profiles"
+        - value: "gocd"
+          label: "gocd"
+        - value: "grafana"
+          label: "grafana"
+        - value: "graphiql"
+          label: "graphiql"
+        - value: "graphql-voyager"
+          label: "graphql-voyager"
+        - value: "ilert"
+          label: "ilert"
+        - value: "jaeger"
+          label: "jaeger"
+        - value: "jenkins"
+          label: "jenkins"
+        - value: "jfrog-artifactory"
+          label: "jfrog-artifactory"
+        - value: "kafka"
+          label: "kafka"
+        - value: "keycloak"
+          label: "keycloak"
+        - value: "kiali"
+          label: "kiali"
+        - value: "lighthouse"
+          label: "lighthouse"
+        - value: "linguist"
+          label: "linguist"
+        - value: "linkerd"
+          label: "linkerd"
+        - value: "manage"
+          label: "manage"
+        - value: "matomo"
+          label: "matomo"
+        - value: "mend"
+          label: "mend"
+        - value: "microsoft-calendar"
+          label: "microsoft-calendar"
+        - value: "mta"
+          label: "mta"
+        - value: "newrelic"
+          label: "newrelic"
+        - value: "nexus-repository-manager"
+          label: "nexus-repository-manager"
+        - value: "nomad"
+          label: "nomad"
+        - value: "npm"
+          label: "npm"
+        - value: "ocm"
+          label: "ocm"
+        - value: "octopus-deploy"
+          label: "octopus-deploy"
+        - value: "odo"
+          label: "odo"
+        - value: "opencost"
+          label: "opencost"
+        - value: "periskop"
+          label: "periskop"
+        - value: "pingidentity"
+          label: "pingidentity"
+        - value: "playlist"
+          label: "playlist"
+        - value: "puppetdb"
+          label: "puppetdb"
+        - value: "quay"
+          label: "quay"
+        - value: "rbac"
+          label: "rbac"
+        - value: "redhat-argocd"
+          label: "redhat-argocd"
+        - value: "redhat-resource-optimization"
+          label: "redhat-resource-optimization"
+        - value: "report-portal"
+          label: "report-portal"
+        - value: "rollbar"
+          label: "rollbar"
+        - value: "scaffolder-backend-module-annotator"
+          label: "scaffolder-backend-module-annotator"
+        - value: "scaffolder-backend-module-kubernetes"
+          label: "scaffolder-backend-module-kubernetes"
+        - value: "scaffolder-backend-module-regex"
+          label: "scaffolder-backend-module-regex"
+        - value: "scaffolder-backend-module-servicenow"
+          label: "scaffolder-backend-module-servicenow"
+        - value: "scaffolder-backend-module-sonarqube"
+          label: "scaffolder-backend-module-sonarqube"
+        - value: "scaffolder-relation-processor"
+          label: "scaffolder-relation-processor"
+        - value: "sentry"
+          label: "sentry"
+        - value: "shortcuts"
+          label: "shortcuts"
+        - value: "sonarqube"
+          label: "sonarqube"
+        - value: "splunk"
+          label: "splunk"
+        - value: "stack-overflow"
+          label: "stack-overflow"
+        - value: "stackstorm"
+          label: "stackstorm"
+        - value: "tech-insights"
+          label: "tech-insights"
+        - value: "tech-radar"
+          label: "tech-radar"
+        - value: "tekton"
+          label: "tekton"
+        - value: "todo"
+          label: "todo"
+        - value: "topology"
+          label: "topology"
+        - value: "vault"
+          label: "vault"
+        - value: "xcmetrics"
+          label: "xcmetrics"
+      default: ""
     validations:
       required: true
+
   - type: input
     id: plugin-name
     attributes:
