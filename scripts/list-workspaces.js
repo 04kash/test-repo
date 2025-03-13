@@ -15,9 +15,11 @@
  * limitations under the License.
  */
 
-import fs from 'fs-extra';
-import { resolve } from 'path';
-import * as url from 'url';
+const fs = require('fs-extra');
+const path = require('path');
+const url = require('url');
+
+const resolve = path.resolve;
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const EXCLUDED_WORKSPACES = ['noop', 'repo-tools'];
