@@ -17,8 +17,13 @@ jobs:
 
       - name: Extract issue body and number
         run: |
-          echo "ISSUE_BODY=${{ github.event.issue.body }}" >> $GITHUB_ENV
+          {
+            echo "ISSUE_BODY<<EOF"
+            echo "${{ github.event.issue.body }}"
+            echo "EOF"
+          } >> $GITHUB_ENV
           echo "ISSUE_NUMBER=${{ github.event.issue.number }}" >> $GITHUB_ENV
+
 
       - name: Run script to determine label
         env:
