@@ -1,13 +1,9 @@
 const fs = require('fs-extra');
 const path = require('path');
-const url = require('url');
 
 const resolve = path.resolve;
 
-// Use __dirname directly in CommonJS
-const __dirname = path.resolve();
-
-// List of excluded workspaces
+// Use the built-in __dirname provided by Node.js
 const EXCLUDED_WORKSPACES = ['noop', 'repo-tools'];
 
 /**
@@ -18,7 +14,7 @@ const EXCLUDED_WORKSPACES = ['noop', 'repo-tools'];
  * @throws {Error} If there are filesystem errors reading the directory
  */
 async function listWorkspaces() {
-  const rootPath = resolve(__dirname, '..');
+  const rootPath = resolve(__dirname, '..');  // Use existing __dirname
   const workspacePath = resolve(rootPath, 'workspaces');
 
   return (await fs.readdir(workspacePath, { withFileTypes: true }))
@@ -28,3 +24,4 @@ async function listWorkspaces() {
 
 // Export the function in CommonJS format
 module.exports = { listWorkspaces };
+
