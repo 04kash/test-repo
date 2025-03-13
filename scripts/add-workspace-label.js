@@ -33,8 +33,8 @@ async function main() {
 
   try {
     await octokit.issues.addLabels({
-      owner: 'backstage',
-      repo: 'community-plugins',
+      owner: '04kash',
+      repo: 'test-repo',
       issue_number: Number(issueNumber),
       labels: [label],
     });
