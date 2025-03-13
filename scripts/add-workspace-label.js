@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
-const { listWorkspaces } = require('./list-workspaces.js');
-
-const { Octokit } = require('@octokit/rest');
+import { listWorkspaces } from './list-workspaces.js';
+import { Octokit } from '@octokit/rest';
 
 async function main() {
   const issueBody = process.env.ISSUE_BODY;
