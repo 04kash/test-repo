@@ -2,6 +2,7 @@
   "name": "test-changeset-script",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "repository": "https://github.com/04kash/test-repo.git",
   "author": "Kashish Mittal <kmittal@redhat.com>",
   "license": "MIT",
