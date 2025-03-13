@@ -8,7 +8,7 @@ async function main() {
   const issueNumber = process.env.ISSUE_NUMBER;
   const token = process.env.GITHUB_TOKEN;
 
-  if (!issueBody || !issueNumber || !repo || !token) {
+  if (!issueBody || !issueNumber || !token) {
     console.error('❌ Missing required environment variables.');
     process.exit(1);
   }
