@@ -1,0 +1,31 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: bitbucket-repourlpicker-test
+  title: Bitbucket RepoUrlPicker Test
+  description: Minimal template for verifying Bitbucket RepoUrlPicker fields.
+spec:
+  owner: user:guest
+  type: service
+  parameters:
+    - title: Repository Details
+      required:
+        - repoUrl
+      properties:
+        repoUrl:
+          title: Repository Location
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - bitbucket.org
+  steps:
+    - id: logRepoUrl
+      name: Log repository URL
+      action: debug:log
+      input:
+        message: ${{ parameters.repoUrl }}
+  output:
+    text:
+      - title: Selected repository URL
+        content: ${{ parameters.repoUrl }}
